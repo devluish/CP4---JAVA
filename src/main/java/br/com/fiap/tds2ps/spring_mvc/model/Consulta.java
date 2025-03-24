@@ -1,37 +1,43 @@
 package br.com.fiap.tds2ps.spring_mvc.model;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
 @Entity
-
 public class Consulta {
 
     @Id
-
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
 
     @ManyToOne
-
     @JoinColumn(name = "patient_id", nullable = false)
-
-    private Patient patient;
+    private Paciente patient;
 
     private LocalDateTime date;
 
-    public Long getId() { return id; }
+    // Getters e Setters
+    public Long getId() {
+        return id;
+    }
 
-    public void setId(Long id) { this.id = id; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public Patient getPatient() { return patient; }
+    public Paciente getPatient() {
+        return patient;
+    }
 
-    public void setPatient(Patient patient) { this.patient = patient; }
+    public void setPatient(Paciente patient) {
+        this.patient = patient;
+    }
 
-    public LocalDateTime getDate() { return date; }
+    public LocalDateTime getDate() {
+        return date;
+    }
 
-    public void setDate(LocalDateTime date) { this.date = date; }
-
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
 }

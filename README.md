@@ -1,5 +1,6 @@
 # Colaboradores
-Luis Henrique RM552692, Cauã Ferrigolli RM553093
+### * Luis Henrique RM552692,
+### * Cauã Ferrigolli RM553093
 
 ## 2TDSPS - 2024	Java Advanced
 

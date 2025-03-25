@@ -1,4 +1,7 @@
-# 2TDSPS - 2024	Java Advanced
+# Colaboradores
+Luis Henrique RM552692, Cauã Ferrigolli RM553093
+
+## 2TDSPS - 2024	Java Advanced
 
 ## Week 1 
 

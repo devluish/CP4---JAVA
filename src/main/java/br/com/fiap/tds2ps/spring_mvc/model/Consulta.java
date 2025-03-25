@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "CONSULTA")
 public class Consulta {
 
     @Id
@@ -11,10 +12,14 @@ public class Consulta {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "patient_id", nullable = false)
+    @JoinColumn(name = "PACIENTE_ID", nullable = false)
     private Paciente patient;
 
-    private LocalDateTime date;
+    @Column(name = "DATA_CONSULTA", nullable = false)
+    private LocalDateTime dataConsulta;
+
+    @Column(name = "DESCRICAO")
+    private String descricao;
 
     // Getters e Setters
     public Long getId() {
@@ -33,11 +38,19 @@ public class Consulta {
         this.patient = patient;
     }
 
-    public LocalDateTime getDate() {
-        return date;
+    public LocalDateTime getDataConsulta() {
+        return dataConsulta;
     }
 
-    public void setDate(LocalDateTime date) {
-        this.date = date;
+    public void setDataConsulta(LocalDateTime dataConsulta) {
+        this.dataConsulta = dataConsulta;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

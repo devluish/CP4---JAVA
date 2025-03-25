@@ -1,7 +1,7 @@
 {
   "type": "excalidraw",
   "version": 2,
-  "source": "https://excalidraw.com",
+  "source": "https://excalidraw-jetbrains-plugin",
   "elements": [
     {
       "id": "sJA08Qr4OkQbeivCbcl5T",
@@ -3825,9 +3825,7 @@
     }
   ],
   "appState": {
-    "gridSize": 20,
-    "gridStep": 5,
-    "gridModeEnabled": false,
+    "gridSize": null,
     "viewBackgroundColor": "#ffffff"
   },
   "files": {}
